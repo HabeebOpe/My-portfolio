@@ -747,7 +747,7 @@ body.open-nav .navigation .nav-bar .nav-btn {
 }
 @media(min-width: 600px) {
   .nav-bar .nav-content ul {
-    width: 60px;
+    height: 80%;
   }
   .navigation .nav-bar .nav-btn {
     display: none;
