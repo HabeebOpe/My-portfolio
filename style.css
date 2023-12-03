@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Lilita+One&family=Lobster&family=Lobster+Two:wght@400;700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -7,6 +9,7 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   text-decoration: none;
   scroll-behavior: smooth;
   cursor: none;
@@ -18,11 +21,12 @@ html {
 }
 
 :root {
-  --body-cl: #1E1E1E;
+  --body-cl: #121212;
   --nex-cl: #000000;
   --primary-cl: darkorange;
   --text-cl: #fff;
 }
+
 body {
   background: var(--body-cl);
 }
@@ -33,264 +37,215 @@ body {
 }
 
 .container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url(asset/orsrc27515.jpg)
+}
+
+.blur-home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media(min-width: 600px) {
-  .container {
-    padding: 50px 5%;
-  }
-}
-
-/***** LOGO SECTION *****/
 .logo {
-  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15% 0 10%;
 }
 
 .logo h1 {
-  font-size: 38px;
-  font-family: 'Pacifico', cursive;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: var(--primary-cl);
-  color: #fff;
-}
-
-.folio-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
   color: var(--text-cl);
-  padding: 0 10px;
-}
-
-.folio-content .pic {
-  position: relative;
-  min-width: 280px;
-  height: 280px;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid var(--primary-cl);
-  background-color: #000;
-}
-
-.folio-content .pic .my-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.folio-content .pic .profile-img {
-  width: 200px;
-}
-
-.folio-content .icon-pack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.folio-content .icon-pack .icon2 {
-  position: absolute;
-  right: -30px;
-  top: 10px;
-  border-radius: 10px;
-}
-
-.folio-content .icon-pack .icon2 div {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  padding: 0 5px;
-}
-
-.folio-content .icon-pack .icon2 div img {
-  width: 12px;
-  margin-right: 5px;
-}
-
-.folio-content .icon-pack .icon2 div p {
-  font-size: 12px;
-}
-
-.folio-content .icon-pack .icon3 {
-  position: absolute;
-  left: -30px;
-  top: 10%;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.folio-content .icon-pack .icon3 div:first-child {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.folio-content .icon-pack .icon3 img {
-  width: 15px;
-  margin-right: 5px;
-}
-
-.folio-content .icon-pack .icon3 p {
-  padding: 0;
-  font-size: 12px;
-}
-
-.folio-content .icon-pack .icon4 {
-  position: absolute;
-  left: -30px;
-  bottom: 30px;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.folio-content .icon-pack .icon4 div:first-child {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.folio-content .icon-pack .icon4 img {
-  width: 15px;
-  margin-right: 5px;
-}
-
-.folio-content .icon-pack .icon4 p {
-  padding: 0;
-  font-size: 12px;
-}
-
-.folio-content .icon-pack .icon5 {
-  position: absolute;
-  right: -35px;
-  bottom: 10px;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.folio-content .icon-pack .icon5 div:first-child {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.folio-content .icon-pack .icon5 img {
-  width: 15px;
-  margin-right: 5px;
-}
-
-.folio-content .icon-pack .icon5 p {
-  padding: 0;
-  font-size: 12px;
-}
-
-.icon1,
-.icon2,
-.icon3,
-.icon4,
-.icon5 {
-  background-color: var(--nex-cl);
-}
-
-.folio-content .icon-pack img:nth-child(4) {
-  right: 15px;
-  bottom: 20px;
-  width: 40px;
-  display: none;
-}
-
-.folio-content .icon-pack img:nth-child(5) {
-  bottom: 0;
-  left: 10px;
-  width: 40px;
-  display: none;
-}
-
-.folio-text {
-  text-align: center;
-  padding: 15px 0;
-}
-
-.folio-text h2 {
-  font-weight: 300;
-}
-
-.folio-content h2 span {
-  color: var(--primary-cl);
-  /*font-family: 'Pacifico', cursive;*/
-  font-weight: 400;
-  font-size: 28px;
   font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px var(--primary-cl);
 }
 
-.folio-text p {
-  font-size: 18px;
-  font-weight: lighter;
+.logo-dot {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.folio-content button {
-  padding: 5px;
-  border-radius: 50px;
-  height: 50px;
-  width: 120px;
-  margin-top: 15px;
-  font-size: 17px;
-  color: #000;
+.logo-dot li {
+  width: 15px;
+  height: 15px;
   background-color: var(--primary-cl);
-  border: none;
 }
 
-.folio-content .folio-text .social {
-  justify-content: center;
+.name-intro {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  text-align: left;
+  color: var(--text-cl);
+}
+
+.name-intro h1 {
+  font-size: 2.5rem;
+}
+
+.name-intro p {
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.i-can-do{
+  margin-top: 10px;
+}
+
+.i-can-do p {
+  font-size: 30px;
+}
+
+.social {
+  position: absolute;
+  right: 15%;
+}
+
+.social ul {
   display: flex;
-  padding: 5px;
-  width: 100%;
+  flex-direction: column;
 }
 
-.folio-text .social span {
+.social ul a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
-  margin: 0 5px;
-  border-radius: 50%;
-  transition: 0.5s ease;
+  color: #fff;
+  margin: 15px 0;
 }
 
-.folio-text .social i {
-  font-size: 22px;
+.social ul a i {
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.social ul a:hover i {
+  color: var(--primary-cl);
+}
+
+.name-intro-dot {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.name-intro-dot li {
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-cl);
+}
+
+.dot-design1 {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+.dot-design1 ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dot-design1 ul li {
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-cl);
+}
+
+.random-quote{
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+  text-align: center
+}
+
+.random-quote p{
+  font-size: 17px;
   color: var(--text-cl);
-  transition: 0.5s ease;
 }
-
-.folio-text .social span:hover {
-  background-color: var(--primary-cl)
-}
-
-.folio-text .social span:hover i {
-  color: var(--text-dcl);
-}
-
-@media(min-width: 600px) {
-  .folio-content {
-    flex-wrap: nowrap;
+@media (max-width: 600px) {
+  .logo  {
+    padding: 5px 15px;
   }
 
-  .folio-content .pic {
-    margin: 0 50px;
+  .container {
+    min-height: 100vh;
+  }
+
+  .welcome {
+    left: 0;
+    top: 10%;
+  }
+
+  .name-intro {
+    left: 15px;
+  }
+
+  .i-can-do {
+    text-align: left;
+  }
+
+  .social {
+    right: 10px;
+  }
+
+  .dot-design1 {
+    left: 15px;
+    top: 20%;
+  }
+
+  .dot-design2 {
+    top: 8%;
+    right: 0;
+  }
+
+  .dot-design2 ul {
+    flex-direction: column
+  }
+
+  .dot-design2 ul li {
+    margin-top: 20px;
+  }
+
+  .dot-design3 {
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    display: none;
+  }
+
+  .dot-design3 ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .dot-design3 ul li {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-cl);
+    margin: 0 10px;
   }
 }
 
 /*------------About Section----------*/
 .about-section {
-  background-image: url('asset/aboutpic.png');
+  background-image: url('asset/abo.png');
   background-position-x: -50px;
   background-position-y: 70%;
   background-repeat: no-repeat;
@@ -303,18 +258,9 @@ body {
   font-size: 40px;
   padding: 20px 10px;
   font-family: 'Pacifico', cursive;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: var(--primary-cl);
   text-align: center;
   color: #fff;
-}
-
-.about-section h2 span {
-  font-size: 40px;
-  font-family: 'Pacifico', cursive;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: var(--primary-cl);
-  color: #fff;
+  text-shadow: 2px 2px var(--primary-cl);
 }
 
 .about {
@@ -323,28 +269,13 @@ body {
 
 .about p {
   position: relative;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
-  padding: 15% 10%;
-  border-radius: 10px;
+  padding: 10%;
   color: var(--text-cl);
   background-color: rgba(0, 0, 0, 0.7)
 }
 
-.about p span {
-  position: absolute;
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--primary-cl);
-}
-.about p span:first-child{
-  left: 10%;
-  top: 5%;
-}
-.about p span:last-child{
-  right: 10%;
-  bottom: -5%;
-}
 @media(min-width: 600px) {
   .about-section {
     background-position-x: 80px;
@@ -385,10 +316,11 @@ body {
   padding: 15px;
   width: 150px;
   border-radius: 20px;
-  color: #000;
-  background-color: var(--primary-cl);
   border: none;
   margin: 10px 0;
+  font-size: 16px;
+  color: #000;
+  background-color: var(--primary-cl);
 }
 
 .service ul {
@@ -401,13 +333,20 @@ body {
 }
 
 .service ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   width: 280px;
+  height: 230px;
   padding: 20px;
-  border-radius: 10px;
   text-align: center;
   margin: 20px 0;
   background-color: var(--body-cl);
   border: 1px solid var(--primary-cl);
+  box-shadow: 8px 8px rgba(255, 191, 137, 1);
+  ;
 }
 
 .service ul li h3 {
@@ -449,8 +388,7 @@ body {
   text-align: center;
   padding: 10px;
   font-family: 'Pacifico', cursive;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: var(--primary-cl);
+  text-shadow: 2px 2px var(--primary-cl);
   color: #fff;
 }
 
@@ -507,13 +445,16 @@ body {
   color: var(--primary-cl);
   font-family: 'Pacifico', cursive
 }
-.great p{
+
+.great p {
   font-size: 5rem;
   text-align: center;
 }
-.great p i{
+
+.great p i {
   color: var(--primary-cl);
 }
+
 @media (min-width: 600px) {
   .great {
     padding: 20px 20%;
@@ -531,9 +472,8 @@ body {
   font-size: 40px;
   padding: 10px;
   font-family: 'Pacifico', cursive;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: var(--primary-cl);
   color: #fff;
+  text-shadow: 2px 2px var(--primary-cl);
 }
 
 .projects {
@@ -561,6 +501,7 @@ body {
   color: var(--text-cl);
   background-color: var(--nex-cl)
 }
+
 .projects ul li h3,
 p {
   padding: 8px 0;
@@ -575,9 +516,11 @@ p {
     width: 32%;
   }
 }
-.project-portfolio{
+
+.project-portfolio {
   padding: 10px;
 }
+
 /*-----------Contact section---------*/
 .contact-section {
   padding: 10px;
@@ -592,11 +535,6 @@ p {
   padding: 15px;
   border-radius: 10px;
   background-color: rgba(255, 191, 137, 1);
-  /*background-image: url('asset/contact.png');
-  background-position-x: -20px;
-  background-position-y: 60%;
-  background-repeat: no-repeat;
-  background-size: 200px;*/
 }
 
 .connect div {
@@ -654,11 +592,13 @@ p {
   transition: 0.5s ease;
   background-color: rgba(255, 191, 137, 1);
 }
+
 .connect2 .social i {
   font-size: 22px;
   color: #000;
   transition: 0.5s ease;
 }
+
 @media(min-width: 600px) {
   .contact-section {
     padding: 20px 15%;
@@ -719,17 +659,21 @@ body.open-nav .nav-bar .nav-content ul {
   padding: 8px;
   color: var(--primary-cl);
 }
+
 .nav-content ul li:hover a {
   background-color: var(--primary-cl);
   color: var(--text-dcl);
 }
+
 .nav-content ul li a p {
   font-size: 12px;
 }
+
 .nav-content ul li a span {
   margin-bottom: 3px;
   font-size: 18px;
 }
+
 .navigation .nav-bar .nav-btn {
   position: fixed;
   bottom: 10px;
@@ -744,13 +688,16 @@ body.open-nav .nav-bar .nav-content ul {
   color: #000;
   transition: 0.5s ease;
 }
+
 body.open-nav .navigation .nav-bar .nav-btn {
   transform: scale(0);
 }
+
 @media(min-width: 600px) {
   .nav-bar .nav-content ul {
     height: 80%;
   }
+
   .navigation .nav-bar .nav-btn {
     display: none;
   }
