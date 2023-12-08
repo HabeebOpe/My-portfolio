@@ -94,7 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
+  padding: 10%;
 }
 
 .name-intro {
@@ -197,6 +197,9 @@ body {
 @media (max-width: 600px) {
   .logo  {
     padding: 5px 15px;
+  }
+  .home-text {
+    padding: 15px;
   }
 
 }
