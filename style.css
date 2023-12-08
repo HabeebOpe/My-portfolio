@@ -94,6 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
 }
 
 .name-intro {
@@ -102,7 +103,7 @@ body {
 }
 
 .name-intro h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .name-intro h1 span{
@@ -126,7 +127,7 @@ body {
 
 .social ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -182,8 +183,8 @@ body {
 }
 
 .random-quote{
-  justify-self: flex-start;
   display: flex;
+  align-self: flex-end;
   justify-content: center;
   text-align: center
 }
@@ -199,63 +200,6 @@ body {
     padding: 5px 15px;
   }
 
-  .container {
-    height: 100vh;
-  }
-
-  .welcome {
-    left: 0;
-    top: 10%;
-  }
-
-  .name-intro {
-    left: 15px;
-  }
-
-  .i-can-do {
-    text-align: left;
-  }
-
-  .social {
-    right: 10px;
-  }
-
-  .dot-design1 {
-    left: 15px;
-    top: 20%;
-  }
-
-  .dot-design2 {
-    top: 8%;
-    right: 0;
-  }
-
-  .dot-design2 ul {
-    flex-direction: column
-  }
-
-  .dot-design2 ul li {
-    margin-top: 20px;
-  }
-
-  .dot-design3 {
-    position: absolute;
-    bottom: 8%;
-    left: 10%;
-    display: none;
-  }
-
-  .dot-design3 ul {
-    display: flex;
-    align-items: center;
-  }
-
-  .dot-design3 ul li {
-    width: 15px;
-    height: 15px;
-    background-color: var(--primary-cl);
-    margin: 0 10px;
-  }
 }
 
 /*------------About Section----------*/
