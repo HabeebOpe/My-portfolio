@@ -108,7 +108,7 @@ body {
 }
 
 .name-intro p {
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px 0;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .i-can-do p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .social {
@@ -202,7 +202,7 @@ body {
 }
 
 .random-quote p{
-  font-size: 17px;
+  font-size: 14px;
   color: var(--text-cl);
 }
 @media (max-width: 600px) {
