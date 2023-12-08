@@ -100,6 +100,10 @@ body {
 }
 
 .name-intro h1 {
+  font-size: 2rem;
+}
+
+.name-intro h1 span{
   font-size: 2.5rem;
 }
 
@@ -128,7 +132,7 @@ body {
 }
 
 .i-can-do p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .social {
