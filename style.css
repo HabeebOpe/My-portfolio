@@ -177,6 +177,7 @@ body {
   position: absolute;
   left: 10%;
   top: 15%;
+  display: none;
 }
 
 .dot-design1 ul {
