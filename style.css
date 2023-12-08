@@ -76,6 +76,7 @@ body {
   font-size: 2rem;
   text-align: center;
   color: var(--text-cl);
+  font-family: 'Pacifico', cursive;
   text-shadow: 2px 2px var(--primary-cl);
 }
 
