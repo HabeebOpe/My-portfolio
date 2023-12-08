@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .logo {
@@ -79,39 +79,6 @@ body {
   text-shadow: 2px 2px var(--primary-cl);
 }
 
-.logo-dot {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.logo-dot li {
-  width: 15px;
-  height: 15px;
-  background-color: var(--primary-cl);
-}
-
-.name-intro {
-  position: absolute;
-  left: 10%;
-  width: 80%;
-  text-align: left;
-  color: var(--text-cl);
-}
-
-.name-intro h1 {
-  font-size: 2rem;
-}
-
-.name-intro h1 span{
-  font-size: 2.5rem;
-}
-
-.name-intro p {
-  font-size: 20px;
-  padding: 10px 0;
-}
-
 .get-resume{
   padding: 10px;
   min-width: 120px;
@@ -123,26 +90,45 @@ body {
   box-shadow: 3px 3px rgba(255, 191, 137, 1);
   transition: 0.3s ease;
 }
-.name-intro button:hover{
-  border: 3px solid #FFCF9C;
+.home-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.i-can-do{
-  margin-top: 10px;
+.name-intro {
+  text-align: center;
+  color: var(--text-cl);
 }
 
-.i-can-do p {
+.name-intro h1 {
+  font-size: 2.5rem;
+}
+
+.name-intro h1 span{
+  font-size: 3.5rem;
+}
+
+.name-intro p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.passion{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.passion p {
   font-size: 25px;
-}
-
-.social {
-  position: absolute;
-  right: 10%;
+  color: var(--text-cl);
 }
 
 .social ul {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social ul a {
@@ -165,8 +151,9 @@ body {
 .name-intro-dot {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin: 10px 0;
 }
 
 .name-intro-dot li {
@@ -195,13 +182,15 @@ body {
 }
 
 .random-quote{
-  position: absolute;
-  bottom: 10px;
-  width: 50%;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
   text-align: center
 }
 
 .random-quote p{
+  width: 50%;
+  text-align: center;
   font-size: 14px;
   color: var(--text-cl);
 }
