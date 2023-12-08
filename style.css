@@ -36,13 +36,23 @@ body {
   overflow: hidden;
 }
 
+.section-padding{
+  padding: 0;
+}
+@media (min-width: 400px) {
+  .section-padding{
+    padding: 0 10%;
+  }
+}
+
 .container {
   width: 100%;
   height: 600px;
   position: relative;
   background-size: cover;
   background-position: center;
-  background-image: url(asset/orsrc27515.jpg)
+  background-image: url(asset/orsrc27515.jpg);
+  background-image: url('asset/delete.png');
 }
 
 .blur-home {
@@ -62,14 +72,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15% 0 10%;
+  padding: 0 10%;
 }
 
 .logo h1 {
   font-size: 1.5rem;
   text-align: center;
   color: var(--text-cl);
-  font-family: 'Pacifico', cursive;
   text-shadow: 2px 2px var(--primary-cl);
 }
 
@@ -102,6 +111,21 @@ body {
   padding: 10px 0;
 }
 
+.get-resume{
+  padding: 10px;
+  min-width: 120px;
+  border: none;
+  border-radius: 0px;
+  font-size: 15px;
+  color: #000;
+  background-color: var(--primary-cl);
+  box-shadow: 3px 3px rgba(255, 191, 137, 1);
+  transition: 0.3s ease;
+}
+.name-intro button:hover{
+  border: 3px solid #FFCF9C;
+}
+
 .i-can-do{
   margin-top: 10px;
 }
@@ -112,7 +136,7 @@ body {
 
 .social {
   position: absolute;
-  right: 15%;
+  right: 10%;
 }
 
 .social ul {
@@ -185,7 +209,7 @@ body {
   }
 
   .container {
-    min-height: 100vh;
+    height: 100vh;
   }
 
   .welcome {
@@ -271,15 +295,16 @@ body {
   position: relative;
   font-size: 18px;
   text-align: center;
+  width: 100%;
   padding: 10%;
   color: var(--text-cl);
-  background-color: rgba(0, 0, 0, 0.7)
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.0));
 }
 
 @media(min-width: 600px) {
   .about-section {
     background-position-x: 80px;
-    padding: 30px 20% 30px 30%;
+    padding: 30px 10% 30px 20%;
   }
 }
 
@@ -313,14 +338,16 @@ body {
 }
 
 .service-info button {
-  padding: 15px;
-  width: 150px;
-  border-radius: 20px;
+  padding: 10px;
+  width: 120px;
   border: none;
-  margin: 10px 0;
-  font-size: 16px;
+  border-radius: 0px;
+  font-size: 15px;
   color: #000;
   background-color: var(--primary-cl);
+  box-shadow: 3px 3px rgba(255, 191, 137, 1);
+  margin: 10px 0;
+  transition: 0.3s ease;
 }
 
 .service ul {
@@ -328,6 +355,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5%;
   flex-wrap: wrap;
   padding-top: 20px;
 }
@@ -343,8 +371,8 @@ body {
   padding: 20px;
   text-align: center;
   margin: 20px 0;
-  background-color: var(--body-cl);
   border: 1px solid var(--primary-cl);
+  background-color: var(--body-cl);
   box-shadow: 8px 8px rgba(255, 191, 137, 1);
   ;
 }
@@ -361,7 +389,7 @@ body {
 
 @media(min-width: 600px) {
   .service-section {
-    padding: 20px 10%;
+    padding: 20px 0;
   }
 
   .service-info {
@@ -369,7 +397,7 @@ body {
   }
 
   .service ul {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .service ul li {
@@ -398,6 +426,7 @@ body {
 
 .skill-sec ul {
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -408,7 +437,6 @@ body {
 .skill-sec ul li {
   width: 22%;
   text-align: center;
-  margin: 5px;
   color: var(--text-cl);
 }
 
@@ -429,7 +457,7 @@ body {
 
 @media (min-width: 600px) {
   .skill-section {
-    padding: 30px 15%;
+    padding: 30px 10%;
   }
 }
 
@@ -457,7 +485,7 @@ body {
 
 @media (min-width: 600px) {
   .great {
-    padding: 20px 20%;
+    padding: 20px 10%;
   }
 }
 
@@ -489,13 +517,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  gap: 20px;
 }
 
 .project-section .projects ul li {
   width: 100%;
-  margin: 5px 0;
   padding: 15px;
   border-radius: 10px;
   color: var(--text-cl);
@@ -509,11 +537,11 @@ p {
 
 @media(min-width: 600px) {
   .project-section {
-    padding: 20px 10%;
+    padding: 20px 0;
   }
 
   .project-section .projects ul li {
-    width: 32%;
+    width: 47%;
   }
 }
 
@@ -544,17 +572,19 @@ p {
 }
 
 .connect div button {
+  padding: 12px;
   width: 150px;
-  padding: 15px;
   border: none;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 0px;
+  font-size: 15px;
   color: #000;
   background-color: var(--primary-cl);
-  border: none;
+  box-shadow: 3px 3px #A25909;
+  transition: 0.3s ease;
 }
 
 .connect2 {
+  align-items: center;
   text-align: center;
   padding: 20px 0;
   padding-top: 40px;
@@ -573,7 +603,7 @@ p {
   font-weight: lighter;
 }
 
-.connect2 .social {
+.foot-social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,7 +611,7 @@ p {
   padding: 15px 0;
 }
 
-.connect2 .social span {
+.foot-social span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -593,7 +623,7 @@ p {
   background-color: rgba(255, 191, 137, 1);
 }
 
-.connect2 .social i {
+.foot-social i {
   font-size: 22px;
   color: #000;
   transition: 0.5s ease;
@@ -601,7 +631,7 @@ p {
 
 @media(min-width: 600px) {
   .contact-section {
-    padding: 20px 15%;
+    padding: 20px 10%;
   }
 }
 
@@ -609,7 +639,7 @@ p {
 .navigation {
   position: fixed;
   height: 100%;
-  width: 60px;
+  width: 100px;
   top: 0;
   right: 0;
 }
@@ -627,6 +657,7 @@ p {
 
 .nav-bar .nav-content ul {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 15px 0 0 15px;
@@ -635,11 +666,12 @@ p {
   background-color: var(--nex-cl);
   overflow: scroll;
   transition: 0.2s ease;
+  padding: 0;
 }
 
 /*******Nav click event *******/
 body.open-nav .nav-bar .nav-content ul {
-  height: 80%;
+  height: auto;
 }
 
 .nav-content ul li {
@@ -652,11 +684,12 @@ body.open-nav .nav-bar .nav-content ul {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 8px;
+  padding: 20px 10px;
   color: var(--primary-cl);
 }
 
@@ -666,11 +699,10 @@ body.open-nav .nav-bar .nav-content ul {
 }
 
 .nav-content ul li a p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .nav-content ul li a span {
-  margin-bottom: 3px;
   font-size: 18px;
 }
 
@@ -695,7 +727,7 @@ body.open-nav .navigation .nav-bar .nav-btn {
 
 @media(min-width: 600px) {
   .nav-bar .nav-content ul {
-    height: 80%;
+    height: auto;
   }
 
   .navigation .nav-bar .nav-btn {
