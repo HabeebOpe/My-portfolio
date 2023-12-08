@@ -185,7 +185,6 @@ body {
 
 .random-quote{
   display: flex;
-  align-self: flex-end;
   justify-content: center;
   text-align: center
 }
