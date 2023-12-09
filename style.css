@@ -111,18 +111,8 @@ body {
 }
 
 .name-intro p {
-  font-size: 18px;
+  font-size: 17px;
   padding: 10px 0;
-}
-
-.passion{
-  text-align: center;
-  margin: 10px 0;
-}
-
-.passion p {
-  font-size: 25px;
-  color: var(--text-cl);
 }
 
 .social ul {
@@ -199,7 +189,7 @@ body {
     padding: 5px 15px;
   }
   .home-text {
-    padding: 15px;
+    padding: 30px 15px 0 15px;
   }
 
 }
@@ -212,7 +202,7 @@ body {
   background-repeat: no-repeat;
   background-size: 250px;
   width: 100%;
-  padding: 50px 20px;
+  padding: 50px 10px;
 }
 
 .about-section h2 {
@@ -230,12 +220,12 @@ body {
 
 .about p {
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   width: 100%;
-  padding: 10%;
+  padding: 20px;
   color: var(--text-cl);
-  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.0));
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 }
 
 @media(min-width: 600px) {
@@ -456,7 +446,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
+  gap: 30px;
 }
 
 .project-section .projects ul li {
@@ -467,6 +457,21 @@ body {
   background-color: var(--nex-cl)
 }
 
+.project-section .projects ul li .links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.project-section .projects ul li .links span a{
+  color: var(--primary-cl);
+}
+
+.links span a{
+  font-size: 14px;
+  color: var(--primary-cl);
+}
 .projects ul li h3,
 p {
   padding: 8px 0;
