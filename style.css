@@ -95,6 +95,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 0 20%;
+  margin-top: 100px;
 }
 
 .name-intro {
@@ -189,7 +190,7 @@ body {
     padding: 5px 15px;
   }
   .home-text {
-    padding: 30px 15px 0 15px;
+    padding: 10px 15px 0 15px;
   }
 
 }
