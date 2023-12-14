@@ -417,7 +417,7 @@ body {
   }
 }
 
-/*-------------Latest Project------------*/
+/*-------------Recent Project------------*/
 .project-section {
   width: 100%;
   padding: 20px 10px;
@@ -456,6 +456,15 @@ body {
   border-radius: 10px;
   color: var(--text-cl);
   background-color: var(--nex-cl)
+}
+
+.project-section .projects ul li p{
+  font-size: 16px;
+}
+
+.project-section .projects ul li p span{
+  font-weight: bold;
+  color: var(--primary-cl);
 }
 
 .project-section .projects ul li .links{
