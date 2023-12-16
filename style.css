@@ -336,7 +336,7 @@ body {
 /*---------------Skill Section -----------*/
 .skill-section {
   width: 100%;
-  padding: 40px 10px;
+  padding: 40px 0;
 }
 
 .skill-section h2 {
@@ -391,7 +391,10 @@ body {
 
 @media (min-width: 600px) {
   .skill-section {
-    padding: 30px 10%;
+    padding: 30px 5%;
+  }
+  .skill-sec ul li {
+    width: 18%;
   }
 }
 
