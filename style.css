@@ -33,11 +33,12 @@ body {
   overflow: hidden;
 }
 
-.section-padding{
+.section-padding {
   padding: 0;
 }
+
 @media (min-width: 400px) {
-  .section-padding{
+  .section-padding {
     padding: 0 10%;
   }
 }
@@ -72,15 +73,11 @@ body {
   padding: 10px 10%;
 }
 
-.logo h1 {
-  font-size: 2rem;
-  text-align: center;
-  color: var(--text-cl);
-  font-family: 'Pacifico', cursive;
-  text-shadow: 2px 2px var(--primary-cl);
+.logo img {
+  width: 150px;
 }
 
-.get-resume{
+.get-resume {
   padding: 8px 10px;
   border: none;
   border-radius: 0px;
@@ -90,7 +87,8 @@ body {
   box-shadow: 3px 3px rgba(255, 191, 137, 1);
   transition: 0.3s ease;
 }
-.home-text{
+
+.home-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,7 +105,7 @@ body {
   font-size: 2rem;
 }
 
-.name-intro h1 span{
+.name-intro h1 span {
   font-size: 3rem;
 }
 
@@ -173,22 +171,24 @@ body {
   background-color: var(--primary-cl);
 }
 
-.random-quote{
+.random-quote {
   display: flex;
   justify-content: center;
   text-align: center
 }
 
-.random-quote p{
-  width: 50%;
+.random-quote p {
+  width: 60%;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-cl);
 }
+
 @media (max-width: 600px) {
-  .logo  {
-    padding: 5px 15px;
+  .logo {
+    padding: 5px 15px 5px 5px;
   }
+
   .home-text {
     padding: 10px 15px 0 15px;
   }
@@ -359,28 +359,34 @@ body {
   align-items: center;
   justify-content: center;
   overflow-x: auto;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .skill-sec ul li {
   width: 22%;
+  height: 110px;
+  padding-bottom: 10px;
   text-align: center;
+  border-radius: 10px;
   color: var(--text-cl);
+  background-color: var(--nex-cl);
+  overflow: hidden;
 }
 
 .skill-sec ul li div {
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 15px;
-  max-height: 100px;
-  border-radius: 10px;
-  background-color: var(--nex-cl);
+  padding: 10px;
+  height: 80px;
 }
 
 .skill-sec ul li div img {
   width: 50px;
-  padding: 10px 0;
+}
+
+.skill-sec ul li p {
+  font-size: 10px;
 }
 
 @media (min-width: 600px) {
@@ -426,7 +432,7 @@ body {
 .project-section h2 {
   text-align: center;
   font-size: 40px;
-  padding: 10px;
+  padding: 20px;
   font-family: 'Pacifico', cursive;
   color: #fff;
   text-shadow: 2px 2px var(--primary-cl);
@@ -453,35 +459,38 @@ body {
 .project-section .projects ul li {
   width: 100%;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   color: var(--text-cl);
   background-color: var(--nex-cl)
 }
 
-.project-section .projects ul li p{
+.project-section .projects ul li p {
+  height: 110px;
   font-size: 16px;
+  padding: 10px 0;
 }
 
-.project-section .projects ul li p span{
+.project-section .projects ul li p span {
   font-weight: bold;
   color: var(--primary-cl);
 }
 
-.project-section .projects ul li .links{
+.project-section .projects ul li .links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 0;
 }
 
-.project-section .projects ul li .links span a{
+.project-section .projects ul li .links span a {
   color: var(--primary-cl);
 }
 
-.links span a{
+.links span a {
   font-size: 14px;
   color: var(--primary-cl);
 }
+
 .projects ul li h3,
 p {
   padding: 8px 0;
@@ -555,6 +564,10 @@ p {
   font-weight: lighter;
 }
 
+.connect2 h5 a{
+  color: var(--text-cl);
+}
+
 .foot-social {
   display: flex;
   align-items: center;
@@ -564,17 +577,21 @@ p {
 }
 
 .foot-social span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 35px;
   height: 35px;
   margin: 0 5px;
   border-radius: 10px;
-  transition: 0.5s ease;
   background-color: rgba(255, 191, 137, 1);
+  overflow: hidden;
+  transition: 0.5s ease;
 }
-
+.foot-social span a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .foot-social i {
   font-size: 22px;
   color: #000;
@@ -594,7 +611,6 @@ p {
   width: 100px;
   top: 0;
   right: 0;
-  display: none;
 }
 
 .nav-bar {
@@ -678,7 +694,7 @@ body.open-nav .navigation .nav-bar .nav-btn {
   transform: scale(0);
 }
 
-@media(min-width: 600px) {
+/*@media(min-width: 600px) {
   .nav-bar .nav-content ul {
     height: auto;
   }
@@ -686,4 +702,4 @@ body.open-nav .navigation .nav-bar .nav-btn {
   .navigation .nav-bar .nav-btn {
     display: none;
   }
-}
+} */
